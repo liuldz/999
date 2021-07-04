@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>目录</title>
+<style type="text/css">
+	* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  transition: background-color 1000ms linear;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+footer {
+  position: absolute;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+  color:goldenrod;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+.title{
+   font-size: 60px;
+    font-family: 楷体;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color:hotpink;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    padding-top: 50px;
+	}
+.menu li:hover{
+            transform: scale(1.1,1.1);
+            transition: 2s;
+            }
+.header{
+    position: absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.menu{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+	
+.menu li{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li p{
+    font-family: 宋体;
+    font-size: 35px;
+    width: 50px;
+    color:chocolate;
+  }
+a{
+	text-decoration: none;
+	}
+</style>
+</head>
+<body>
+	<div class="title">三体</div>
+	  <div class="header">
+	  	<ul class="menu">
+	  		<li>
+	  			<a href="https://www.baidu.com">
+	  				<p>作者介绍</p>
+	  			</a>
+	  		</li>	
+<li>
+<a href="https://sunxianghe123.github.io/duanxueqi/index.html">
+<p>作品介绍</p>
+</a>
+</li>	
+<li>
+<a href="https://sunxianghe123.github.io/duanxueqi/index.html">
+<p>小测试</p>
+</a>
+</li>	
+<li>
+<a href="https://sunxianghe123.github.io/duanxueqi/index.html">
+<p>句子赏析</p>
+</a>
+</li>		
+</ul>
+</div>
+<canvas id="main"></canvas>
+<canvas id="middle"></canvas>
+<canvas id="final"></canvas>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
